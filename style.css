@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pkmCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainPkmCard{
+    background: red;
+    padding: 2rem;
+    margin: 2rem;
+}
