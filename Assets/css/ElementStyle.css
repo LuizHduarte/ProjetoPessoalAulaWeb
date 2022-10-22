@@ -1,0 +1,71 @@
+#pkmElementDivFire{
+    background: red;
+}
+
+#pkmElementDivGrass{
+    background: green;
+}
+
+#pkmElementDivWater{
+    background: blue;
+}
+
+#pkmElementDivPosion{
+    background: purple;
+}
+
+#pkmElementDivFlying{
+    background: rgb(74, 74, 172);
+}
+
+#pkmElementDivBug{
+    background: rgb(155, 176, 63);
+}
+
+#pkmElementDivNormal{
+    background: rgb(140, 141, 138);
+}
+
+#pkmElementDivElectric{
+    background: rgb(237, 176, 78);
+}
+
+#pkmElementDivSteel{
+    background: #71797E;
+}
+
+#pkmElementDivGhost{
+    background: #3c6680;
+}
+
+#pkmElementDivIce{
+    background: #64acd9;
+}
+
+#pkmElementDivRock{
+    background: #867939;
+}
+
+#pkmElementDivPsychic{
+    background: #af2696;
+}
+
+#pkmElementDivGround{
+    background: #948437;
+}
+
+#pkmElementDivFighting{
+    background: #774a2c;
+}
+
+#pkmElementDivFairy{
+    background: #e62ecd;
+}
+
+#pkmElementDivDragon{
+    background: #691b5e;
+}
+
+#pkmElementDivDark{
+    background: #380531;
+}

@@ -3,13 +3,66 @@
     padding: 0;
 }
 
+body{
+    background: rgb(218, 213, 213);
+    align-items: center;
+}
+
+#mainHeader{
+    padding: 1rem;
+    background: white;
+    border-bottom: 5px solid red;
+    display: flex;
+    flex-direction: row;
+}
+
+#mainDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
 .pkmCard{
     display: flex;
     flex-direction: column;
 }
 
 .mainPkmCard{
-    background: red;
+    background: white;
     padding: 2rem;
     margin: 2rem;
+    border-radius: 2rem;
+    align-items: center;
+    box-shadow: 1px 1px 2px black;
 }
+
+.pkmElementContainer{
+    display: flex;
+    align-items: flex-start;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+
+.pkmElementDiv{
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    width: 30%;
+}
+
+.pkmName{
+    font-size: larger;
+    font-weight: bold;
+    text-transform: capitalize; 
+}
+
+.spriteDiv{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
