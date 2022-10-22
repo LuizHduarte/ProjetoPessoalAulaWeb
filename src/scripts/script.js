@@ -1,3 +1,4 @@
+
 function initialFetch (){
     fetch("https://pokeapi.co/api/v2/pokemon?limit=150")
     .then(response => response.json())
@@ -99,7 +100,7 @@ function createPkmDiv(data, url){
 
     let linkDiv = document.createElement("a")
     linkDiv.onclick = function(){localStorage.setItem("FetchContent", url)}
-    linkDiv.href = "./pkm.html"
+    linkDiv.href = "./src/pages/pkm.html"
 
     let spriteDiv = document.createElement("img")
     spriteDiv.src = data.sprites.other['official-artwork'].front_default;

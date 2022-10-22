@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./pkmScript.js"></script>
+    <link rel="stylesheet" href="../../Assets/css/global.css">
+    <link rel="stylesheet" href="../../Assets/css/ElementStyle.css">
+    <link rel="stylesheet" href="./pkmStyle.css">
+    <title>Pokedex</title>
+</head>
+<body onload="pkmFetch()">
+    <header id="mainHeader">
+        <a href="../../index.html" style="display: flex; text-decoration:none">
+            <img src="./Assets/img/pokeball-img.png" alt="" id="headerIMG" style="max-width:5%; height: auto;">
+            <h1 
+            style="color: yellow; 
+            text-shadow: 3px 3px 1px blue; 
+            font-size: 3rem;"
+            >
+            POKÉDEX
+            </h1>
+        </a>
+    </header>
+    <div id="mainDiv" onload="pkmFetch()">
+        <h1 id="pkmName"></h1>
+        <div id="mainContent">
+            <div id="pkmAssets" style="align-items: center;">
+                <img id ="spriteDiv" alt="">
+            </div>
+            
+            <div id="pkmData">
+                <span id="pkmDescription"></span>
+                <div id="pkmStats">
+                    <div id="mainStatsDiv">
+                        <div id="HeightDiv" class="statsDiv">
+                            <span>Height</span>
+                            <span id="HeightValue" class="StatsValueDiv"></span>
+                        </div>
+                        <div id="WeigthDiv" class="statsDiv">
+                            <span>Weight</span>
+                            <span id="WeightValue" class="StatsValueDiv"></span>
+                        </div>
+                    </div>
+                    <div  id="mainStatsDiv">
+                        <div id="CategoryDiv" class="statsDiv">
+                            <span>Ability</span>
+                            <span id="AbilityValue" class="StatsValueDiv">Seed</span>
+                        </div>
+                        <div id="IdDiv" class="statsDiv">
+                            <span>Id</span>
+                            <span id="IdValue" class="StatsValueDiv">Male</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <div id="buttonContainer">
+            <button class="AlterPageButton" type="button" id="prevButton" onclick="reloadPagePrev()">Anterior</button>
+            <button class="AlterPageButton"  type="button" id="nextButton" onclick="reloadPageNext()">Próximo</button>
+        </div>
+        
+    </div>
+
+    
+
+</body>
+</html>
