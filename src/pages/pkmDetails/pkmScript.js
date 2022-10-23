@@ -179,7 +179,7 @@ async function getData(json) {
     pkmTypeOne.className = "pkmElementDiv";
     pkmTypeOne.onclick = () =>{
         localStorage.setItem("typeFetch" , json.types[0].type.url)
-        window.location.href = "../types/type.html";
+        window.location.replace("../types/type.html")
     }
 
     pkmElementContainer.appendChild(pkmTypeOne)
@@ -193,7 +193,7 @@ async function getData(json) {
         pkmElementContainer.appendChild(pkmTypetwo)
         pkmTypetwo.onclick = () =>{
             localStorage.setItem("typeFetch" , json.types[1].type.url)
-            window.location.href = "../types/type.html";
+            window.location.replace("../types/type.html")
         }
     }
 

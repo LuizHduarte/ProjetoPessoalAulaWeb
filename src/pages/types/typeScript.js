@@ -18,7 +18,7 @@ function searchPkm(){
     let searchValue = document.getElementById("inputBar")
     let searchUrl =  "https://pokeapi.co/api/v2/pokemon/" + searchValue.value
     localStorage.setItem("FetchContent" , searchUrl)
-    window.location.href = "../pkmDetails/pkm.html"
+    window.location.replace("../pkmDetails/pkm.html")
 }
 
 function pkmFetch(){
@@ -138,7 +138,7 @@ function createPkmDiv(data, url){
     pkmTypeOne.className = "pkmElementDiv";
     pkmTypeOne.onclick = () =>{
         localStorage.setItem("typeFetch" , data.types[0].type.url)
-        window.location.href = "./type.html";
+        window.location.replace ("./type.html")
     }
 
     dataDiv.appendChild(linkDiv)
@@ -155,7 +155,7 @@ function createPkmDiv(data, url){
         pkmTypetwo.innerHTML = data.types[1].type.name
         pkmTypetwo.onclick = () =>{
             localStorage.setItem("typeFetch" , data.types[1].type.url)
-            window.location.href = "./type.html";
+            window.location.replace("./type.html")
         }
         pkmElementContainer.appendChild(pkmTypetwo)
     }
