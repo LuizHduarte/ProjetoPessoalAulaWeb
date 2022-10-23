@@ -122,6 +122,7 @@ async function getData(json) {
 
     let spriteDiv = document.getElementById("spriteDiv")
     spriteDiv.src = json.sprites.other['official-artwork'].front_default;
+    spriteDiv.alt = "imagem do pokemon"
 
     let pkmName = document.getElementById("pkmName")
     pkmName.innerHTML = json.name
