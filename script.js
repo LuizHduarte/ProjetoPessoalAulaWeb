@@ -24,7 +24,6 @@ function pkmFetch(){
     var url = localStorage.getItem("FetchContent")
     fetch(url)
     .then(response => response.json())
-    .then(json => console.log(json))
     .catch(err => console.log(err))
 }
 
@@ -161,7 +160,6 @@ function createPkmDiv(data, url){
 }
 
 async function getData(json) {
-    console.log(json)
     let mainDiv = document.getElementById("mainDiv")
     json.map((pkm) =>{
         let pkmCardDiv = document.createElement("div");

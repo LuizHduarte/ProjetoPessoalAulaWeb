@@ -113,8 +113,6 @@ function searchPkm(){
 
 async function getData(json) {
 
-    console.log(json)
-
     localStorage.setItem("nextPkm" , "https://pokeapi.co/api/v2/pokemon/"+(json.id+1))
     if(json.id >1){
         localStorage.setItem("prevPkm" , "https://pokeapi.co/api/v2/pokemon/"+(json.id-1))
@@ -151,18 +149,15 @@ async function getData(json) {
     AbilityValue.innerHTML = json.abilities[0].ability.name;
 
     let IdValue = document.getElementById("IdValue")
-    console.log(addLeadingZeros(json.id))
     IdValue.innerHTML = addLeadingZeros(json.id, 3);
 
     let pkmDescription = document.getElementById("pkmDescription")
     fetch(json.species.url)
     .then(response => response.json())
     .then(json => {
-        console.log(json)
-
-        const Rnumbers = [8, 9, 10, 11];
+        const Rnumbers = [7, 8, 9, 10, 11];
         const random = Math.floor(Math.random() * Rnumbers.length);
-        console.log(random)
+
         pkmDescription.innerHTML = (json.flavor_text_entries[Rnumbers[random]].flavor_text)
     })
     .catch(err => console.log(err))
