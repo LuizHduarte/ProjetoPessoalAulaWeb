@@ -1,0 +1,37 @@
+#mainDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pkmCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainPkmCard{
+    background: white;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    align-items: center;
+    box-shadow: 1px 1px 2px black;
+}
+
+.mainPkmCard:hover{
+    top:-2px;box-shadow:4px 4px 4px rgb(14, 7, 7)
+}
+
+.pkmName{
+    font-size: larger;
+    font-weight: bold;
+    text-transform: capitalize; 
+}
+
+.spriteDiv{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
