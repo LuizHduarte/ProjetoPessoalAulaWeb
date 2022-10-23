@@ -136,7 +136,7 @@ function createPkmDiv(data, url){
     pkmTypeOne.className = "pkmElementDiv";
     pkmTypeOne.onclick = () =>{
         localStorage.setItem("typeFetch" , data.types[0].type.url)
-        window.location.href = "./src/pages/types/type.html";
+        window.location.replace("./src/pages/types/type.html")
     }
 
     dataDiv.appendChild(linkDiv)
@@ -153,7 +153,7 @@ function createPkmDiv(data, url){
         pkmTypetwo.innerHTML = data.types[1].type.name
         pkmTypetwo.onclick = () =>{
             localStorage.setItem("typeFetch" , data.types[0].type.url)
-            window.location.href = "./src/pages/types/type.html";
+            window.location.replace("./src/pages/types/type.html")
         }
         pkmElementContainer.appendChild(pkmTypetwo)
     }
