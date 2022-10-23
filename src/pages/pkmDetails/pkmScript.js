@@ -1,9 +1,16 @@
 function pkmFetch() {
     let url = localStorage.getItem("FetchContent")
     fetch(url)
-    .then(response => response.json())
-    .then(json => getData(json))
-    .catch(err => console.log(err))
+    .then(response => {
+        if(response.ok){
+           return response.json()
+        }
+        else{
+            window.location.replace("../notFound/notFound.html")
+        } 
+    })
+    .then(json => {getData(json)})
+    .catch(err => {console.log(err)})
 }
 
 function reloadPageNext(){
@@ -97,6 +104,13 @@ function addLeadingZeros(num, totalLength) {
     return String(num).padStart(totalLength, '0');
 }
 
+function searchPkm(){
+    let searchValue = document.getElementById("inputBar")
+    let searchUrl =  "https://pokeapi.co/api/v2/pokemon/" + searchValue.value
+    localStorage.setItem("FetchContent" , searchUrl)
+    location.reload()
+}
+
 async function getData(json) {
 
     console.log(json)
@@ -183,6 +197,8 @@ async function getData(json) {
         }
     }
 
+    let mainDiv = document.getElementById("mainDiv")
+    mainDiv.style.display = ""
     pkmAssets.appendChild(pkmElementContainer)
     
 }

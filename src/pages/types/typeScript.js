@@ -2,9 +2,23 @@
 function initialFetch (){
     let url = localStorage.getItem("typeFetch")
     fetch(url)
-    .then(response => response.json())
+    .then(response => {
+        if(response.ok){
+            return response.json()
+        }
+        else{
+            window.location.replace("../notFound/notFound.html")
+        }
+    })
     .then(json => getData(json))
     .catch(err => console.log(err))
+}
+
+function searchPkm(){
+    let searchValue = document.getElementById("inputBar")
+    let searchUrl =  "https://pokeapi.co/api/v2/pokemon/" + searchValue.value
+    localStorage.setItem("FetchContent" , searchUrl)
+    window.location.href = "../pkmDetails/pkm.html"
 }
 
 function pkmFetch(){

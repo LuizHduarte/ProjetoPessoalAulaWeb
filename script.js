@@ -1,9 +1,23 @@
 
 function initialFetch (){
     fetch("https://pokeapi.co/api/v2/pokemon?limit=150")
-    .then(response => response.json())
-    .then(json => getData(json.results))
+    .then(response => {
+        if(response.ok){
+            return response.json()
+        }
+        else{
+            window.location.replace("./src/pages/notFound/notFound.html")
+        }
+    })
+    .then(json =>getData(json.results))
     .catch(err => console.log(err))
+}
+
+function searchPkm(){
+    let searchValue = document.getElementById("inputBar")
+    let searchUrl =  "https://pokeapi.co/api/v2/pokemon/" + searchValue.value
+    localStorage.setItem("FetchContent" , searchUrl)
+    window.location.replace("./src/pages/pkmDetails/pkm.html")
 }
 
 function pkmFetch(){
