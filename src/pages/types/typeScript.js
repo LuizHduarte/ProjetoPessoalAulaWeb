@@ -25,7 +25,6 @@ function pkmFetch(){
     var url = localStorage.getItem("FetchContent")
     fetch(url)
     .then(response => response.json())
-    .then(json => console.log(json))
     .catch(err => console.log(err))
 }
 
@@ -164,9 +163,7 @@ function createPkmDiv(data, url){
 
 async function getData(json) {
     let mainDiv = document.getElementById("mainDiv")
-    console.log(json.pokemon)
     json.pokemon.map((pkm) =>{
-        console.log(pkm.pokemon.url)
         let pkmCardDiv = document.createElement("div");
         pkmCardDiv.className = "mainPkmCard"
         
