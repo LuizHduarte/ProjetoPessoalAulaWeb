@@ -105,6 +105,7 @@ function createPkmDiv(data, url){
     let spriteDiv = document.createElement("img")
     spriteDiv.src = data.sprites.other['official-artwork'].front_default;
     spriteDiv.className = "spriteDiv"
+    spriteDiv.alt = "imagem do pokemon"
     linkDiv.appendChild(spriteDiv)
     linkDiv.className = "linkDiv"
     
