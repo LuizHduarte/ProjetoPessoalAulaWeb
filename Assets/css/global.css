@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(242, 236, 236, 0.661);
+    align-items: center;
+}
+
+#mainHeader{
+    padding: 1rem;
+    background: white;
+    border-bottom: 5px solid red;
+    display: flex;
+    flex-direction: row;
+}
+
+.pkmElementContainer{
+    display: flex;
+    align-items: flex-start;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+
+.pkmElementDiv{
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    width: 30%;
+}

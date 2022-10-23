@@ -1,0 +1,160 @@
+#pkmElementDivFire{
+    background: red;
+}
+
+#pkmElementDivFire:hover{
+    cursor: pointer;
+    background: rgba(255, 0, 0, 0.600);
+}
+
+#pkmElementDivGrass{
+    background: green;
+}
+#pkmElementDivGrass:hover{
+    cursor: pointer;
+    background: rgba(0, 128, 0, 0.600);
+}
+
+#pkmElementDivWater{
+    background: blue;
+}
+
+#pkmElementDivWater:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 255, 0.600);
+}
+
+#pkmElementDivPosion{
+    background: purple;
+}
+
+#pkmElementDivPosion:hover{
+    cursor: pointer;
+    background: rgba(128, 0, 128, 0.600);
+}
+
+#pkmElementDivFlying{
+    background: rgb(74, 74, 172);
+}
+
+#pkmElementDivFlying:hover{
+    cursor: pointer;
+    background: rgba(74, 74, 172, 0.600);
+}
+
+#pkmElementDivBug{
+    background: rgb(155, 176, 63);
+}
+
+#pkmElementDivBug:hover{
+    cursor: pointer;
+    background: rgba(155, 176, 63, 0.600);
+}
+
+#pkmElementDivNormal{
+    background: rgb(140, 141, 138);
+}
+
+#pkmElementDivNormal:hover{
+    cursor: pointer;
+    background: rgba(140, 141, 138, 0.600);
+}
+
+#pkmElementDivElectric{
+    background: rgb(237, 176, 78);
+}
+
+#pkmElementDivElectric:hover{
+    cursor: pointer;
+    background: rgba(237, 176, 78, 0.600);
+}
+
+#pkmElementDivSteel{
+    background: #71797E;
+}
+
+#pkmElementDivSteel:hover{
+    cursor: pointer;
+    background: #6e777ca5;
+}
+
+#pkmElementDivGhost{
+    background: #3c6680;
+}
+
+#pkmElementDivGhost:hover{
+    cursor: pointer;
+    background: #3c66809b;
+}
+
+#pkmElementDivIce{
+    background: #64acd9;
+}
+
+#pkmElementDivIce:hover{
+    cursor: pointer;
+    background: #64acd99b;
+}
+
+#pkmElementDivRock{
+    background: #867939;
+}
+
+#pkmElementDivRock:hover{
+    cursor: pointer;
+    background: #867939a9;
+}
+
+#pkmElementDivPsychic{
+    background: #af2696;
+}
+
+#pkmElementDivPsychic:hover{
+    cursor: pointer;
+    background: #af2696ab;
+}
+
+#pkmElementDivGround{
+    background: #948437;
+}
+
+#pkmElementDivGround:hover{
+    cursor: pointer;
+    background: #948437ae;
+}
+
+#pkmElementDivFighting{
+    background: #774a2c;
+}
+
+#pkmElementDivFighting:hover{
+    cursor: pointer;
+    background: #774a2caf;
+}
+
+#pkmElementDivFairy{
+    background: #e62ecd;
+}
+
+#pkmElementDivFairy{
+    cursor: pointer;
+    background: #e62ecda7;
+}
+
+#pkmElementDivDragon{
+    background: #691b5e;
+}
+
+#pkmElementDivDragon:hover{
+    cursor: pointer;
+    background: #691b5fb0;
+}
+
+#pkmElementDivDark{
+    background: #380531;
+}
+
+#pkmElementDivDark:hover{
+    cursor: pointer;
+    background: #3805319a;
+}

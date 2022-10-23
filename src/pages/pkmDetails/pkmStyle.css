@@ -1,0 +1,106 @@
+#pkmName{
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: capitalize;
+    align-self: center;
+}
+
+#mainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#spriteDiv{
+    width: 25rem;
+   
+}
+
+#mainContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin-top: 5rem;
+}
+
+#pkmData{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    max-width: 50%;
+}
+
+#pkmDescription{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+.statsDiv{
+    display: flex;
+    flex-direction: column;
+    tex-trans
+}
+
+#mainStatsDiv{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0rem;
+}
+
+.StatsValueDiv{
+    color: black;
+    font-weight: normal;
+}
+
+#pkmStats{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #30a7d7;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: x-large;
+    border-radius: 1rem;
+}
+
+.pkmElementContainer{
+   margin-left: 6rem;
+}
+
+#buttonContainer{
+    display: flex;
+    margin-top:10rem ;
+    justify-content: space-evenly;
+    width: 70vh;
+}
+
+.AlterPageButton{
+    padding: 0 5rem;
+    height: 2.5rem;
+    background: #30a7d7;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.AlterPageButton:hover{
+    background: #14aeeb;
+    cursor: pointer;
+
+}
+
+#prevButton:disabled{
+    background: gray;
+    cursor: not-allowed;
+}
+
+#nextButton:disabled{
+    background: gray;
+    cursor: not-allowed;
+}
